@@ -1,0 +1,38 @@
+  body { font-family: system-ui, sans-serif; padding: 20px; background: #f8f8f8; max-width: 600px; margin: auto; }
+
+    body { font-family: system-ui, sans-serif; padding: 20px; background: #f8f8f8; max-width: 600px; margin: auto; }
+  h2 { color: #FF9300; border-left: 8px solid #009900; padding-left: 10px; }
+  /* 電車の枠（緑） */
+  .train-card { border: 2px solid #009900; padding: 12px; margin-top: 15px; background: #fff; border-radius: 6px; }
+  /* バスの枠（赤） */
+  .bus-card { border: 2px solid #d32f2f; padding: 8px 12px; margin-top: 4px; background: #fff; border-radius: 6px; font-size: 0.9em; display: flex; justify-content: space-between; }
+  .bus-label { color: #d32f2f; font-weight: bold; }
+  
+  .row { display: flex; gap: 10px; align-items: center; margin-bottom: 20px; }
+  select, input, button { padding: 8px; border: 2px solid #009900; border-radius: 4px; }
+  button { background: #FF9300; color: white; border: none; cursor: pointer; font-weight: bold; }
+
+  /* 掲示板の部分*/
+
+  .ticker-board {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000; /* 駅の掲示板風に黒 */
+  color: #ff9300;   /* オレンジ色のLED風 */
+  overflow: hidden;
+  padding: 5px 0;
+  font-family: 'MS Gothic', sans-serif; /* ドット文字っぽく */
+}
+
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-text 15s linear infinite;
+}
+
+@keyframes scroll-text {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}

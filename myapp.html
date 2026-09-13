@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+ <meta charset="UTF-8">
+  <title>静岡理工科大学向けスクールバス接続案内</title>
+ <link rel="stylesheet" href="style.css"> 
+ <script src="aaa.js" defer></script>
+</head>
+
+<body>
+
+ <h1 class="sticky-title"><a href="#">静岡理工科大学向けスクールバス接続案内（登校専用）</a></h1>
+
+</div>
+
+<header>
+  <!-- メインビジュアル -->
+    <div class="mainVisual-wrapper">
+    <img src="schoolbus.png" width="400" height="200" alt="mainVisual" class="mv mv1">
+  </div>
+
+</header>
+
+ <main>
+  <div id="section1">
+    <div class="item-container">
+      <h2>当サイトの使用方法</h2>
+      <p>①最寄りのJRの駅名（出発地）を入力する。<br>
+   <!-- ②間に合わせたい時限数（例:3限）を選択する。<br> -->
+        ②出発時刻を入力する<br>
+        ③検索ボタンをクリックする。</p>
+        <p>注意事項:当サイトは個人的な目的で制作されています。<br>
+        遅刻や遅延の発生など、当サイトを使用したことによる一切の責任は負いません。<br>
+      時刻の正確性は保証されません。目安としてご利用ください。</p>
+      <h2>静岡理工科大学の時間割</h2>
+      <p>1限: 9:00～10:30<br>
+        2限: 10:40～12:10<br>
+        3限: 13:00～14:30<br>
+        4限: 14:40～16:10<br>
+        5限: 16:20～17:50</p>
+
+     
+    </div>
+  </div>
+
+  <h2>静岡理工科大学専用乗換案内検索</h2>
+
+<div class="row">
+  <div>出発駅:</div>
+  <select id="startStation">
+    <option value="熱海">熱海 (CA00)</option>
+    <option value="函南">函南 (CA01)</option>
+    <option value="三島">三島 (CA02)</option>
+    <option value="沼津">沼津 (CA03)</option>
+    <option value="片浜">片浜 (CA04)</option>
+    <option value="原">原 (CA05)</option>
+    <option value="東田子の浦">東田子の浦 (CA06)</option>
+    <option value="吉原">吉原 (CA07)</option>
+    <option value="富士">富士 (CA08)</option>
+    <option value="富士川">富士川 (CA09)</option>
+    <option value="新蒲原駅">新蒲原駅 (CA10)</option>
+    <option value="蒲原">蒲原 (CA11)</option>
+    <option value="由比">由比 (CA12)</option>
+    <option value="興津">興津 (CA13)</option>
+    <option value="清水">清水 (CA14)</option>
+    <option value="草薙">草薙 (CA15)</option>
+    <option value="東静岡">東静岡 (CA16)</option>
+    <option value="静岡">静岡 (CA17)</option> 
+    <option value="安倍川">安倍川 (CA18)</option>
+    <option value="用宗">用宗 (CA19)</option>
+    <option value="焼津">焼津 (CA20)</option>
+    <option value="西焼津">西焼津 (CA21)</option>
+    <option value="藤枝">藤枝 (CA22)</option>
+    <option value="六合">六合 (CA23)</option>
+    <option value="島田">島田 (CA24)</option>
+    <option value="島田">金谷 (CA25)</option>
+    <option value="菊川">菊川 (CA26)</option>
+    <option value="掛川">掛川 (CA27)</option>
+    <option value="愛野">愛野 (CA28)</option>
+    <option value="袋井">袋井 (CA29)</option>
+    <option value="御厨">御厨 (CA30)</option>
+    <option value="磐田">磐田 (CA31)</option>
+    <option value="豊田町">豊田町 (CA23)</option>
+    <option value="天竜川">天竜川 (CA33)</option>
+    <option value="浜松">浜松 (CA34)</option>
+    <!-- <option value="高塚">高塚 (CA35)</option>
+    <option value="舞阪">舞阪 (CA34)</option>
+    <option value="弁天島">弁天島 (CA35)</option>
+    <option value="新居町">新居町 (CA36)</option>
+    <option value="鷲津">鷲津 (CA37)</option>
+    <option value="新所原">新所原 (CA38)</option>
+    <option value="二川">二川 (CA39)</option>
+    <option value="豊橋">豊橋 (CA40)</option> -->
+</select>
+  <input type="time" id="startTime" value="07:00">
+  <button onclick="search()">検索</button>
+</div>
+
+<div id="result"></div> <!-- 検索結果を表示するエリア -->
+
+<h2>バグ,誤情報報告フォーム</h2>
+<p>（Coming Soon…）</p>
+<a href="https://forms.gle/f9Lw9ryiNjWULM2k6" target="_blank">バグ報告用フォーム（https://forms.gle/f9Lw9ryiNjWULM2k6）</a>
+
+
+<!-- scriptは.jsファイルを別に作成。（時刻表のデータはjsファイルに記載する）-->
+
+<!-- 管理者からのメッセージを流すエリア -->
+
+<div class="ticker-board">
+  <div class="ticker-text" id="adminNotice">
+    現在、熱海駅から浜松駅までの接続案内を提供しています。その他の駅については順次対応予定です。ご不便をおかけしますが、ご了承ください。
+  </div>
+</div>
